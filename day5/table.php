@@ -41,7 +41,7 @@ $result = mysqli_query($conn,$query);
         <td><?php echo $row['password']?></td>
         <td><?php echo $row['room']?></td>
         <td><?php echo $row['ext']?></td>
-        <td><img src="<?php echo $row['profile_picture']?>" alt=""></td>
+         <td><img src=<?php echo  'uploaded/'.$row['profile_picture']?> alt="" width="100px" height="100px"></td>
 
     </tr>
    <?php } ?>
